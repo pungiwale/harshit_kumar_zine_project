@@ -14,8 +14,6 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix, classification_report
 from cleverhans.tf2.attacks import fast_gradient_method, carlini_wagner_l2 #, deepfool
 from sklearn.metrics import roc_curve, auc
-import sys
-sys.path.append('/content/drive/MyDrive')
 import stage_one
 
 
