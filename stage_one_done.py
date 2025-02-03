@@ -26,7 +26,7 @@ y_test = df["attack_cat"]
 
 # Identify non-numeric columns
 non_numeric_columns = df.select_dtypes(include=['object']).columns
-print("Non-numeric columns to be removed:", non_numeric_columns)
+
 
 # Drop non-numeric columns
 x_train = x_train.drop(columns=non_numeric_columns)
