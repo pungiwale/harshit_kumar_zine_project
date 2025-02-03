@@ -20,7 +20,7 @@ for i in range(n):
     df = pd.read_csv(f, on_bad_lines='skip')
 
     dataframes.append(df)
-df = pd.concat(dataframes, axis=1)
+df = pd.concat(dataframes, axis=0)
 df=df[original_columns]
 
 
